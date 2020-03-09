@@ -1,0 +1,13 @@
+.option-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $options;
+  padding: 0.5rem 1.5rem;
+  text-transform: capitalize;
+  color: $base-dark;
+  margin-top: 0.2rem;
+}
+.trash-icon path {
+  fill: $base-dark;
+  cursor: pointer;
+}

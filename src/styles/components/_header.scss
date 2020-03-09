@@ -1,0 +1,92 @@
+.header {
+  background-color: $base-light;
+  height: 5rem;
+};
+
+.navigation {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    align-self: stretch;
+    display: flex; 
+  }
+
+  &__left-name {
+    font-size: 3.6rem;
+    letter-spacing: 0.07rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    color: $base-dark;
+  }
+
+  &--link {
+    color: $base-dark;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+  }
+
+  &--link:hover {
+    color: $base-light;
+    background-color: $base-dark;
+  }
+
+  &--link--active {
+    color: $base-light;
+    background-color: $base-dark;
+  }
+
+  &__username {
+    text-transform: capitalize;
+  }
+
+  &__right--icon {
+    width: 4rem;
+    align-self: center;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    &__left-name {
+      font-size: 2.4rem;
+      letter-spacing: 0;
+    }
+    &__right {
+      align-self: stretch;
+      display: none; 
+      &--menu-open {
+        position: absolute;
+        top: 5rem;
+        height: 5rem;
+        z-index: 120;
+        background-color: $base-light;
+        width: 100%;
+      }
+    }
+    &--link {
+      width: 100%;
+    }
+    &__right--icon {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    &__right--menu-open {
+      align-self: stretch;
+      display: flex; 
+    }
+  }
+};

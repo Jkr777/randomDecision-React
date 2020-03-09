@@ -1,0 +1,13 @@
+.background-modal {
+  position: fixed;
+  background-color: rgba(27,59,71, 0.9);
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  &--close {
+    display: none;
+  }
+  &--open {
+    display: block;
+  }
+}

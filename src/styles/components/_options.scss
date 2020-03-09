@@ -1,0 +1,17 @@
+.option-text {
+  color: $base-light;
+}
+
+.options-head {
+  background-color: #D7E9F0;
+  padding: $small--size;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  &__reset {
+    cursor: pointer;
+  }
+  &__reset:hover {
+    text-decoration: underline;
+  }
+}

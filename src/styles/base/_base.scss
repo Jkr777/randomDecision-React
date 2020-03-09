@@ -1,0 +1,28 @@
+:root {
+  font-size: 62.5%; // / 1rem = 10px, 10px/16px = 62.5%
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  background-color: $base-dark;
+  @media only screen and (max-width: $bp-small) { 
+    font-size: 1.6rem;
+  }
+}
+
+.container {
+  width: 60%;
+  margin: $medium--size auto;
+  @media only screen and (max-width: $bp-largest) { 
+    width: 90%;
+  }
+}
+
+.error {
+  color: $base-light;
+  font-weight: bold;
+}

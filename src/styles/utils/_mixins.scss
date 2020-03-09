@@ -1,0 +1,19 @@
+@mixin btn {
+  border-radius: 1rem;
+  background-color: $base-dark;
+  color: $base-light;
+  text-transform: capitalize;
+  margin-bottom: $small--size;
+}
+
+@mixin modal-btn {
+  padding: 0.5rem;
+  border:  2px solid $base-dark;
+  color: $base-dark;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  @media only screen and (max-width: $bp-small) { 
+    padding: 0.2rem;
+  }
+}
+

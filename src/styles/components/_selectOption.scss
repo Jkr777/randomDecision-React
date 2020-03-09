@@ -1,0 +1,18 @@
+.btn-select-option {
+  margin-top: $medium--size;
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: $base-dark;
+  border: 0.3rem solid $base-light;
+  @include btn;
+  &:hover {
+    background-color: $base-light;
+    color: $base-dark;
+  }
+  @media only screen and (max-width: $bp-largest) { 
+    margin-top: 0;
+    font-size: 2rem;
+  }
+}

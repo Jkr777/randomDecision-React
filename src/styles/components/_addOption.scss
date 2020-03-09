@@ -1,0 +1,28 @@
+.add-form {
+  padding: 1rem;
+  display: flex;
+  background-color: $options;
+  justify-content: space-between;
+  &__input {
+    border: none;
+    padding: 0.5rem;
+    width: 75%;
+    background-color: $base-dark;
+    color: $base-light;
+    @media only screen and (max-width: $bp-small) { 
+      align-self: center;
+      padding: 0.2rem;
+      height: 3rem;
+    }
+  }
+  &__input:focus {
+    border: 2px solid $base-light;
+  }
+  &__btn {
+    @include modal-btn;
+  }
+  &__btn:hover {
+    background-color: $base-light;
+    border:  2px solid $base-light;
+  }
+}

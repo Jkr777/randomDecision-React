@@ -1,0 +1,49 @@
+.formContainer {
+  width: 98%;
+  margin: auto;
+}
+
+.homeTitle {
+  margin: $medium--size 0 5rem 0;
+  font-size: $font_size--big;
+  color: $base-light;
+  @media only screen and (max-width: $bp-small) { 
+    font-size: 2rem;
+    margin: 2rem;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    margin-bottom: $small--size;
+    border: none;
+    padding: 0.5rem;
+    color: $base-dark;
+    background-color: $base-light;
+  }
+  &__input:focus {
+    outline-color: #bedbe6;
+    border: 0.3rem solid $base-dark;
+  }
+  &__button {
+    font-weight: bold;
+    border: 0.2rem solid $base-light;
+    padding: 0.5rem;
+    @include btn;
+  }
+  &__button:hover {
+    background-color: $base-light;
+    color: $base-dark;
+  }
+  &__error {
+    color: $base-light;
+    font-weight: bold;
+  }
+  @media only screen and (max-width: $bp-largest) { 
+    width: 90%;
+  }
+}
