@@ -4,7 +4,7 @@
 * heroku app link: https://random-decision.herokuapp.com/
 
 * about:
-  - To run this project you need to change process.env.RANDOM_DECISION_API (./src/index.js) with your enviroment var or url. 
+  - To run this project you need to change process.env.RANDOM_DECISION_API (./src/index.js) with your enviroment variable or url. 
   - I created this project using create-react-app tool.
   - I used react lifecycle methods to handle custom functionality that gets executed during the different phases of a component.
   - I used react props system to pass data through components.
