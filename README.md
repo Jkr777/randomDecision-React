@@ -1,8 +1,5 @@
 * In this project, your machine will randomly select an option from a list created by you. You have email/password authentication. You can add or remove 1 option, or you can remove them all. A user can delete or update his account.
 
-* For this project I used Visual Studio Code, my OS is Ubuntu 18.04.
-* heroku app link: https://random-decision.herokuapp.com/
-
 * about:
   - To run this project you need to change process.env.RANDOM_DECISION_API (./src/index.js) with your environment variable or url. 
   - I created this project using create-react-app tool.
